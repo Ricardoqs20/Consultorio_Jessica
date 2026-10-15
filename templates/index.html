@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art Odonto - Clínica Especializada | Dra. Jéssica</title>
+  <!-- Google Fonts: Playfair Display + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#inicio" class="brand-logo">
+        <img src="{{ url_for('static', filename='images/logo-transparent.png') }}" alt="Art Odonto Logo" class="brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-name">Art Odonto</span>
+          <span class="brand-tagline">- Clínica Especializada</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#inicio" class="nav-link active">Início</a></li>
+          <li><a href="#quem-somos" class="nav-link">Quem Somos</a></li>
+          <li><a href="#tratamentos" class="nav-link">Tratamentos</a></li>
+          <li><a href="#dra-jessica" class="nav-link">Dra. Jéssica</a></li>
+          <li><a href="#avaliacoes" class="nav-link">Avaliações</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#contato" class="btn-primary">Agendar Avaliação</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="inicio" class="section hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="section-tag">Saúde, estética e acolhimento</span>
+          <h1 class="section-title">Excelência e Cuidado<br>em Saúde Bucal</h1>
+          <p class="hero-description">
+            Um cuidado que começa pela escuta. Agende uma avaliação com a Dra. Jéssica e descubra um caminho para cuidar do seu sorriso, com tranquilidade e atenção a você.
+          </p>
+          <div class="hero-cta-group">
+            <a href="https://wa.me/5598985834148" target="_blank" class="btn-primary">
+              Falar no WhatsApp
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+            </a>
+            <p class="hero-subtext">Vamos conversar sobre o que você precisa.</p>
+          </div>
+        </div>
+        <div class="hero-image-wrapper">
+          <div>
+            <img src="{{ url_for('static', filename='images/hero-dra-jessica.png') }}" alt="Dra. Jéssica no consultório" class="hero-img">
+            <p class="image-caption">Imagem ilustrativa · substituir por fotografia oficial</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST / HIGHLIGHTS BAR -->
+    <div class="trust-bar">
+      <div class="container trust-items">
+        <div class="trust-item">
+          <svg class="trust-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+          Escuta atenta
+        </div>
+        <div class="trust-item">
+          <svg class="trust-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+          Cuidado individualizado
+        </div>
+        <div class="trust-item">
+          <svg class="trust-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+          Saúde e estética em equilíbrio
+        </div>
+      </div>
+    </div>
+
+    <!-- QUEM SOMOS / A CLÍNICA -->
+    <section id="quem-somos" class="section">
+      <div class="container about-grid">
+        <div class="about-image-wrapper">
+          <img src="{{ url_for('static', filename='images/clinica-consultorio.png') }}" alt="Espaço da clínica Art Odonto" class="about-img">
+          <p class="image-caption">Imagem ilustrativa · substituir por fotografia oficial</p>
+        </div>
+        <div class="about-content">
+          <span class="section-tag">Quem Somos / A Clínica</span>
+          <h2 class="section-title">Um espaço para se sentir bem.<br>Um cuidado para você.</h2>
+          <p>
+            Na Art Odonto, confiança se constrói com atenção. Acolhimento, conforto e profissionalismo fazem parte de cada etapa, da primeira conversa ao planejamento do seu cuidado.
+          </p>
+          <hr class="text-divider">
+          <p>
+            A Dra. Jéssica é a profissional exclusiva da clínica, Especialista em Harmonização Orofacial e Estética Dental. Uma abordagem próxima, que considera sua saúde, suas expectativas e sua individualidade.
+          </p>
+          <a href="#dra-jessica" class="link-arrow">
+            Conheça a Dra. Jéssica ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRATAMENTOS -->
+    <section id="tratamentos" class="section">
+      <div class="container">
+        <div class="treatments-header">
+          <div>
+            <span class="section-tag">Tratamentos</span>
+            <h2 class="section-title">Diferentes caminhos.<br>O mesmo cuidado.</h2>
+          </div>
+          <p class="treatments-subtitle">
+            Cada sorriso tem sua história. Converse sobre suas necessidades e entenda qual cuidado faz sentido para você.
+          </p>
+        </div>
+
+        <div class="treatments-grid">
+          <!-- 1: Harmonização Facial -->
+          <div class="treatment-card">
+            <div>
+              <div class="treatment-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <path d="M3 7V5a2 2 0 0 1 2-2h2"></path>
+                  <path d="M17 3h2a2 2 0 0 1 2 2v2"></path>
+                  <path d="M21 17v2a2 2 0 0 1-2 2h-2"></path>
+                  <path d="M7 21H5a2 2 0 0 1-2-2v-2"></path>
+                </svg>
+              </div>
+              <h3 class="treatment-title">Harmonização Facial</h3>
+              <p class="treatment-desc">Um olhar cuidadoso para a harmonia facial, respeitando seus traços e sua naturalidade.</p>
+            </div>
+            <a href="https://wa.me/5598985834148?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20harmonização%20facial." target="_blank" class="treatment-link">Conversar sobre Harmonização ↗</a>
+          </div>
+
+          <!-- 2: Implante -->
+          <div class="treatment-card">
+            <div>
+              <div class="treatment-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+              </div>
+              <h3 class="treatment-title">Implante</h3>
+              <p class="treatment-desc">Alternativas seguras e modernas para reabilitar dentes perdidos e renovar sua segurança ao sorrir.</p>
+            </div>
+            <a href="https://wa.me/5598985834148?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20implantes%20dentários." target="_blank" class="treatment-link">Conversar sobre Implantes ↗</a>
+          </div>
+
+          <!-- 3: Prótese -->
+          <div class="treatment-card">
+            <div>
+              <div class="treatment-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M4 10c0-3.3 2.7-6 6-6s6 2.7 6 6v4c0 2.2-1.8 4-4 4h-4c-2.2 0-4-1.8-4-4v-4z"></path>
+                  <path d="M8 10h8"></path>
+                  <path d="M10 14h4"></path>
+                </svg>
+              </div>
+              <h3 class="treatment-title">Prótese</h3>
+              <p class="treatment-desc">Restauração funcional e estética sob medida para devolver o conforto da mastigação e harmonia.</p>
+            </div>
+            <a href="https://wa.me/5598985834148?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20próteses%20dentárias." target="_blank" class="treatment-link">Conversar sobre Prótese ↗</a>
+          </div>
+
+          <!-- 4: Prevenção -->
+          <div class="treatment-card">
+            <div>
+              <div class="treatment-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  <path d="M9 12l2 2 4-4"></path>
+                </svg>
+              </div>
+              <h3 class="treatment-title">Prevenção</h3>
+              <p class="treatment-desc">Acompanhamento contínuo e diagnóstico precoce para manter a saúde bucal sempre em dia.</p>
+            </div>
+            <a href="https://wa.me/5598985834148?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20cuidados%20de%20prevenção." target="_blank" class="treatment-link">Conversar sobre Prevenção ↗</a>
+          </div>
+
+          <!-- 5: Limpeza -->
+          <div class="treatment-card">
+            <div>
+              <div class="treatment-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"/>
+                </svg>
+              </div>
+              <h3 class="treatment-title">Limpeza</h3>
+              <p class="treatment-desc">Profilaxia completa e remoção de placa para dentes e gengivas saudáveis e protegidos.</p>
+            </div>
+            <a href="https://wa.me/5598985834148?text=Olá!%20Gostaria%20de%20agendar%20uma%20limpeza%20dental." target="_blank" class="treatment-link">Conversar sobre Limpeza ↗</a>
+          </div>
+
+          <!-- 6: Clareamento -->
+          <div class="treatment-card">
+            <div>
+              <div class="treatment-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <h3 class="treatment-title">Clareamento</h3>
+              <p class="treatment-desc">Para iluminar o sorriso com um planejamento seguro que respeita a saúde e sensibilidade dos dentes.</p>
+            </div>
+            <a href="https://wa.me/5598985834148?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20clareamento%20dental." target="_blank" class="treatment-link">Conversar sobre Clareamento ↗</a>
+          </div>
+
+          <!-- 7: Aparelho Ortodôntico -->
+          <div class="treatment-card">
+            <div>
+              <div class="treatment-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <line x1="8" y1="3" x2="8" y2="21"></line>
+                  <line x1="16" y1="3" x2="16" y2="21"></line>
+                  <rect x="6" y="8" width="4" height="8" rx="1"></rect>
+                  <rect x="14" y="8" width="4" height="8" rx="1"></rect>
+                </svg>
+              </div>
+              <h3 class="treatment-title">Aparelho Ortodôntico</h3>
+              <p class="treatment-desc">Alinhamento e equilíbrio do sorriso. Entenda as possibilidades e aparelhos para o seu caso.</p>
+            </div>
+            <a href="https://wa.me/5598985834148?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20aparelho%20ortodôntico." target="_blank" class="treatment-link">Conversar sobre Ortodontia ↗</a>
+          </div>
+
+          <!-- 8: Manutenção -->
+          <div class="treatment-card">
+            <div>
+              <div class="treatment-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <h3 class="treatment-title">Manutenção</h3>
+              <p class="treatment-desc">Manutenção e ajustes periódicos do aparelho ortodôntico para garantir a evolução e o sucesso do seu tratamento.</p>
+            </div>
+            <a href="https://wa.me/5598985834148?text=Olá!%20Gostaria%20de%20agendar%20uma%20manutenção%20do%20meu%20aparelho." target="_blank" class="treatment-link">Conversar sobre Manutenção ↗</a>
+          </div>
+        </div>
+
+        <p class="treatments-disclaimer">
+          A indicação de qualquer procedimento depende de avaliação clínica. Possibilidades, limites e cuidados serão conversados individualmente.
+        </p>
+      </div>
+    </section>
+
+    <!-- DRA. JÉSSICA -->
+    <section id="dra-jessica" class="section">
+      <div class="container profile-grid">
+        <div class="profile-content">
+          <span class="section-tag">Sua profissional, de perto</span>
+          <h2 class="section-title">Dra. Jéssica</h2>
+          <h3 class="profile-role">Especialista em Harmonização Orofacial e Estética Dental</h3>
+          <p>
+            À frente dos atendimentos da Art Odonto, a Dra. Jéssica une um olhar atento à saúde bucal e à estética, com espaço para ouvir suas dúvidas e entender suas expectativas.
+          </p>
+          <p>
+            O objetivo é construir um plano de cuidado claro, respeitando suas escolhas, seu tempo e as necessidades do seu sorriso.
+          </p>
+          <div style="margin-top: 2rem;">
+            <a href="#contato" class="btn-primary">
+              Agendar com a Dra. Jéssica ↗
+            </a>
+          </div>
+        </div>
+        <div class="profile-image-wrapper">
+          <img src="{{ url_for('static', filename='images/dra-jessica-atendimento.png') }}" alt="Dra. Jéssica em atendimento com paciente" class="profile-img">
+          <p class="image-caption">Imagem ilustrativa · substituir por fotografia oficial</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- O PRIMEIRO PASSO -->
+    <section class="section">
+      <div class="container">
+        <div class="steps-header">
+          <div>
+            <span class="section-tag">O primeiro passo</span>
+            <h2 class="section-title" style="margin-bottom: 0;">Seu cuidado começa com uma conversa.</h2>
+          </div>
+          <a href="#contato" class="btn-outline">Agendar Avaliação ↗</a>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-num">01</div>
+            <h3 class="step-title">Uma primeira conversa</h3>
+            <p class="step-desc">Conte o que você procura pelo WhatsApp e tire suas dúvidas sobre o agendamento.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">02</div>
+            <h3 class="step-title">Escuta e avaliação</h3>
+            <p class="step-desc">Na consulta, a Dra. Jéssica conhece suas necessidades e avalia sua saúde bucal.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">03</div>
+            <h3 class="step-title">Um plano para você</h3>
+            <p class="step-desc">Entenda as possibilidades, as etapas e os cuidados antes de decidir como seguir.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AVALIAÇÕES (GOOGLE REVIEWS WIDGET) -->
+    <section id="avaliacoes" class="section reviews-section">
+      <div class="container">
+        <div class="reviews-header-block">
+          <span class="section-tag">Avaliações</span>
+          <h2 class="section-title">Histórias que merecem ser ouvidas.</h2>
+        </div>
+
+        <div class="google-reviews-wrapper">
+          <!-- Summary Box à esquerda -->
+          <div class="google-summary-card">
+            <h3 class="google-summary-title">{{ reviews_data.overall.status }}</h3>
+            <div class="google-stars">
+              {% for i in range(5) %}
+              <svg class="star-icon" viewBox="0 0 24 24" fill="#fbbc04" width="26" height="26">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+              {% endfor %}
+            </div>
+            <p class="google-summary-count">Com base em <strong>{{ reviews_data.overall.total_reviews }} avaliações</strong></p>
+            <div class="google-badge-logo">
+              <!-- Google Logo Colorido -->
+              <span class="g-blue">G</span><span class="g-red">o</span><span class="g-yellow">o</span><span class="g-blue">g</span><span class="g-green">l</span><span class="g-red">e</span>
+            </div>
+          </div>
+
+          <!-- Carousel de Cards de Avaliação -->
+          <div class="reviews-carousel-outer">
+            {% if reviews_data.reviews and reviews_data.reviews|length > 0 %}
+              <button class="carousel-arrow prev" id="revPrevBtn" aria-label="Avaliação anterior">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+              </button>
+
+              <div class="reviews-track-container" id="reviewsTrackContainer">
+                <div class="reviews-track" id="reviewsTrack">
+                  {% for r in reviews_data.reviews %}
+                  <div class="review-google-card">
+                    <div class="review-card-top">
+                      <div class="review-author-info">
+                        <h4 class="review-author-name">{{ r.author_name }}</h4>
+                        <span class="review-time">{{ r.relative_time_description }}</span>
+                      </div>
+                      <div class="google-g-icon" title="Avaliação verificada no Google">
+                        <svg width="22" height="22" viewBox="0 0 24 24">
+                          <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"/>
+                          <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/>
+                          <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+                          <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+                        </svg>
+                      </div>
+                    </div>
+
+                    <div class="review-rating-row">
+                      <div class="card-stars">
+                        {% for s in range(r.rating) %}
+                        <svg viewBox="0 0 24 24" fill="#fbbc04" width="16" height="16">
+                          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                        {% endfor %}
+                      </div>
+                      {% if r.verified %}
+                      <span class="verified-badge" title="Usuário verificado">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="#1a73e8">
+                          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                      </span>
+                      {% endif %}
+                    </div>
+
+                    <div class="review-text-container">
+                      <p class="review-text">{{ r.text }}</p>
+                    </div>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+
+              <button class="carousel-arrow next" id="revNextBtn" aria-label="Próxima avaliação">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+            {% else %}
+              <div class="reviews-pending-box">
+                <div class="google-g-icon" style="margin-bottom: 0.8rem;">
+                  <svg width="32" height="32" viewBox="0 0 24 24">
+                    <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"/>
+                    <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/>
+                    <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+                    <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+                  </svg>
+                </div>
+                <h4 style="font-size: 1.05rem; color: #202124; margin-bottom: 0.4rem;">Conexão com Google Places</h4>
+                <p style="font-size: 0.88rem; color: #5f6368; line-height: 1.5;">
+                  {{ reviews_data.error }}
+                </p>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DÚVIDAS FREQUENTES (FAQ) -->
+    <section class="section">
+      <div class="container faq-grid">
+        <div>
+          <span class="section-tag">Dúvidas frequentes</span>
+          <h2 class="section-title">Mais clareza.<br>Mais tranquilidade.</h2>
+          <p class="faq-desc">
+            Informação também é cuidado. Se sua dúvida não está aqui, vamos conversar.
+          </p>
+          <a href="#contato" class="link-arrow">
+            Tirar dúvidas sobre agendamento ↗
+          </a>
+        </div>
+
+        <div class="faq-list">
+          <!-- FAQ 1 (Open by default) -->
+          <div class="faq-item active">
+            <button class="faq-header" type="button">
+              <span>Como agendar minha avaliação?</span>
+              <span class="faq-icon">−</span>
+            </button>
+            <div class="faq-content">
+              O primeiro contato é pelo WhatsApp. Conte o que você precisa e consulte a disponibilidade. As informações sobre a consulta e o agendamento serão confirmadas nessa conversa.
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button class="faq-header" type="button">
+              <span>Preciso saber qual tratamento quero antes da avaliação?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-content">
+              Não. Durante a avaliação inicial, a Dra. Jéssica realiza um diagnóstico completo para identificar as melhores opções de acordo com os seus objetivos e saúde bucal.
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button class="faq-header" type="button">
+              <span>O clareamento é indicado para todo mundo?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-content">
+              A maioria das pessoas pode realizar clareamento, mas uma consulta prévia é indispensável para checar restaurações, sensibilidade e a saúde geral da gengiva e do esmalte.
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button class="faq-header" type="button">
+              <span>Como saber se a harmonização é adequada para mim?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-content">
+              A harmonização orofacial é personalizada para realçar sua beleza natural sem exageros. Em consulta, alinhamos desejos e proporções anatômicas.
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item">
+            <button class="faq-header" type="button">
+              <span>Posso tirar dúvidas antes de agendar?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-content">
+              Com certeza! Pelo nosso WhatsApp tiramos dúvidas iniciais sobre localização, procedimentos e como funciona o atendimento.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION (BANNER VINHO) -->
+    <section id="contato" class="cta-banner">
+      <div class="container cta-grid">
+        <div>
+          <span class="cta-tag">Vamos cuidar do seu sorriso?</span>
+          <h2 class="cta-title">Um novo cuidado começa por você.</h2>
+          <p class="cta-text">
+            Converse com a Art Odonto e agende uma avaliação com a Dra. Jéssica. Estamos aqui para ouvir você.
+          </p>
+        </div>
+
+        <div class="cta-action-box">
+          <a href="#inicio" class="btn-white">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            Agendar Avaliação ↗
+          </a>
+
+          <div class="cta-meta">
+            <div class="cta-meta-item">Canal de agendamento · número oficial a confirmar</div>
+            <div class="cta-meta-item">Endereço da clínica · em breve</div>
+            <div class="cta-meta-item">Horários de atendimento · a confirmar</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#inicio" class="brand-logo" style="margin-bottom: 0.8rem;">
+            <img src="{{ url_for('static', filename='images/logo-transparent.png') }}" alt="Art Odonto Logo" class="brand-logo-img">
+            <div class="brand-text">
+              <span class="brand-name">Art Odonto</span>
+              <span class="brand-tagline">- Clínica Especializada</span>
+            </div>
+          </a>
+          <p>Saúde, estética e um cuidado próximo a você.</p>
+        </div>
+
+        <div>
+          <ul class="footer-links">
+            <li><a href="#inicio" class="footer-link">Início</a></li>
+            <li><a href="#quem-somos" class="footer-link">Quem Somos</a></li>
+            <li><a href="#dra-jessica" class="footer-link">Dra. Jéssica</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <ul class="footer-links">
+            <li><a href="#tratamentos" class="footer-link">Tratamentos</a></li>
+            <li><a href="#avaliacoes" class="footer-link">Avaliações</a></li>
+            <li><a href="#contato" class="footer-link">Contato</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-column-title">Dra. Jéssica</h4>
+          <div class="footer-profile-info">
+            <p>Especialista em Harmonização Orofacial e Estética Dental</p>
+            <p style="margin-top: 0.8rem; color: var(--color-text-muted);">Registro profissional (CRO) · a confirmar</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© Art Odonto - Clínica Especializada</div>
+        <div>Assinatura provisória · Imagens ilustrativas · protótipo estático</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
