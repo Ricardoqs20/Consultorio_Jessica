@@ -153,10 +153,45 @@ a {
   color: var(--color-tag);
 }
 
-.header-actions {
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
+.mobile-nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 1001;
+}
+
+.hamburger-bar {
+  display: block;
+  width: 24px;
+  height: 2.5px;
+  background-color: var(--color-burgundy);
+  border-radius: 2px;
+  transition: var(--transition);
+}
+
+.mobile-nav-toggle.open .hamburger-bar:nth-child(1) {
+  transform: translateY(7.5px) rotate(45deg);
+}
+
+.mobile-nav-toggle.open .hamburger-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-nav-toggle.open .hamburger-bar:nth-child(3) {
+  transform: translateY(-7.5px) rotate(-45deg);
+}
+
+.mobile-nav-action {
+  display: none;
+}
+
+.w-100 {
+  width: 100%;
+  justify-content: center;
 }
 
 /* Buttons */
@@ -955,8 +990,50 @@ a {
 }
 
 @media (max-width: 768px) {
-  .nav-menu {
+  .desktop-only {
     display: none;
+  }
+
+  .mobile-nav-toggle {
+    display: flex;
+  }
+
+  .nav-wrapper {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background-color: #fbf8f3;
+    padding: 6rem 2rem 3rem;
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: right 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 1000;
+  }
+
+  .nav-wrapper.open {
+    right: 0;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .nav-link {
+    font-size: 1.15rem;
+    font-weight: 600;
+    display: block;
+    padding: 0.4rem 0;
+  }
+
+  .mobile-nav-action {
+    display: block;
+    margin-top: 2rem;
   }
 
   .treatments-grid,
@@ -979,5 +1056,51 @@ a {
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .hero-img,
+  .about-img,
+  .profile-img {
+    height: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1.25rem;
+  }
+
+  .section {
+    padding: 3.5rem 0;
+  }
+
+  .brand-name {
+    font-size: 1.4rem;
+  }
+
+  .brand-logo-img {
+    height: 44px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .trust-items {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .treatment-card {
+    padding: 1.6rem 1.4rem;
+  }
+
+  .cta-title {
+    font-size: 2.2rem;
   }
 }

@@ -57,4 +57,37 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+  // Register Service Worker for PWA
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js')
+        .then((reg) => {
+          console.log('[PWA] Service Worker registrado com sucesso:', reg.scope);
+        })
+        .catch((err) => {
+          console.log('[PWA] Falha ao registrar Service Worker:', err);
+        });
+    });
+  }
+
+  // Mobile Navigation Drawer Toggle
+  const mobileToggle = document.getElementById('mobileNavToggle');
+  const navWrapper = document.getElementById('navWrapper');
+
+  if (mobileToggle && navWrapper) {
+    mobileToggle.addEventListener('click', () => {
+      mobileToggle.classList.toggle('open');
+      navWrapper.classList.toggle('open');
+      document.body.style.overflow = navWrapper.classList.contains('open') ? 'hidden' : '';
+    });
+
+    // Close mobile menu on clicking any navigation link
+    navWrapper.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        mobileToggle.classList.remove('open');
+        navWrapper.classList.remove('open');
+        document.body.style.overflow = '';
+      });
+    });
+  }
 });

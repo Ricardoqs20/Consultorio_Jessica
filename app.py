@@ -116,9 +116,17 @@ def index():
     reviews_data = fetch_google_reviews()
     return render_template('index.html', reviews_data=reviews_data)
 
-@app.route('/api/reviews')
-def api_reviews():
-    return jsonify(fetch_google_reviews())
+@app.route('/sw.js')
+def service_worker():
+    return app.send_static_file('sw.js')
+
+@app.route('/manifest.json')
+def manifest():
+    return app.send_static_file('manifest.json')
+
+@app.route('/favicon.ico')
+def favicon():
+    return app.send_static_file('images/favicon.ico')
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)

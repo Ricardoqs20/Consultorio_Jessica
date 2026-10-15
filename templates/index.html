@@ -4,6 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Art Odonto - Clínica Especializada | Dra. Jéssica</title>
+  <!-- Favicon para todos os navegadores -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon-16x16.png') }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicon-32x32.png') }}">
+
+  <!-- PWA & Mobile Web App Meta Tags -->
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#672d3b">
+  
+  <!-- Apple Touch Icon & iOS PWA settings -->
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/apple-touch-icon.png') }}">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Art Odonto">
+
   <!-- Google Fonts: Playfair Display + Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +39,14 @@
         </div>
       </a>
 
-      <nav>
+      <!-- Hamburger Button (Mobile) -->
+      <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Abrir menu de navegação">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <nav class="nav-wrapper" id="navWrapper">
         <ul class="nav-menu">
           <li><a href="#inicio" class="nav-link active">Início</a></li>
           <li><a href="#quem-somos" class="nav-link">Quem Somos</a></li>
@@ -33,9 +55,12 @@
           <li><a href="#avaliacoes" class="nav-link">Avaliações</a></li>
           <li><a href="#contato" class="nav-link">Contato</a></li>
         </ul>
+        <div class="mobile-nav-action">
+          <a href="#contato" class="btn-primary w-100">Agendar Avaliação</a>
+        </div>
       </nav>
 
-      <div class="header-actions">
+      <div class="header-actions desktop-only">
         <a href="#contato" class="btn-primary">Agendar Avaliação</a>
       </div>
     </div>
