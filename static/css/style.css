@@ -979,13 +979,13 @@ a {
 
   .hero-img {
     height: auto;
-    max-width: 380px;
+    max-width: 100%;
     margin: 0 auto;
   }
 
   .about-img,
   .profile-img {
-    height: 350px;
+    height: auto;
     max-width: 100%;
   }
 
@@ -1061,7 +1061,11 @@ a {
     margin-top: 1.5rem;
   }
 
-  .treatments-grid,
+  .treatments-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
   .steps-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -1107,13 +1111,13 @@ a {
   }
 
   .hero-img {
-    max-width: 300px;
+    max-width: 100%;
     border-top-left-radius: 100px;
   }
 
   .about-img,
   .profile-img {
-    height: 280px;
+    height: auto;
   }
 
   .about-grid,
@@ -1252,7 +1256,7 @@ a {
   }
 
   .hero-img {
-    max-width: 260px;
+    max-width: 100%;
     border-top-left-radius: 80px;
   }
 
@@ -1308,7 +1312,7 @@ a {
 
   .about-img,
   .profile-img {
-    height: 240px;
+    height: auto;
   }
 
   .about-content p,
