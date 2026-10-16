@@ -977,11 +977,19 @@ a {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .hero-img,
+  .hero-img {
+    height: auto;
+    max-width: 100%;
+  }
+
   .about-img,
   .profile-img {
     height: 400px;
     max-width: 100%;
+  }
+
+  .hero-image-wrapper {
+    justify-content: center;
   }
 
   .section-title {
@@ -1062,7 +1070,6 @@ a {
     font-size: 2rem;
   }
 
-  .hero-img,
   .about-img,
   .profile-img {
     height: 320px;
