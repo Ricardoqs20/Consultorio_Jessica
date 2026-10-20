@@ -61,7 +61,7 @@
       </nav>
 
       <div class="header-actions desktop-only">
-        <a href="#contato" class="btn-primary">Agendar Avaliação</a>
+        <a href="#contato" class="btn-primary" id="btnAgendarHeader">Agendar Avaliação</a>
       </div>
     </div>
   </header>
@@ -322,11 +322,6 @@
           <p>
             O objetivo é construir um plano de cuidado claro, respeitando suas escolhas, seu tempo e as necessidades do seu sorriso.
           </p>
-          <div style="margin-top: 2rem;">
-            <a href="#contato" class="btn-primary">
-              Agendar com a Dra. Jéssica ↗
-            </a>
-          </div>
         </div>
         <div class="profile-image-wrapper">
           <img src="{{ url_for('static', filename='images/dra-jessica-atendimento.png') }}" alt="Dra. Jéssica em atendimento com paciente" class="profile-img">
@@ -479,7 +474,7 @@
           <p class="faq-desc">
             Informação também é cuidado. Se sua dúvida não está aqui, vamos conversar.
           </p>
-          <a href="#contato" class="link-arrow">
+          <a href="#inicio" class="link-arrow">
             Tirar dúvidas sobre agendamento ↗
           </a>
         </div>
@@ -555,17 +550,7 @@
         </div>
 
         <div class="cta-action-box">
-          <a href="#inicio" class="btn-white">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-              <line x1="16" y1="2" x2="16" y2="6"></line>
-              <line x1="8" y1="2" x2="8" y2="6"></line>
-              <line x1="3" y1="10" x2="21" y2="10"></line>
-            </svg>
-            Agendar Avaliação ↗
-          </a>
-
-          <div class="cta-meta">
+          <div class="cta-meta" style="margin-top: 0; padding-top: 0; border-top: none;">
             <div class="cta-meta-item">Canal de agendamento · número oficial a confirmar</div>
             <div class="cta-meta-item">Endereço da clínica · em breve</div>
             <div class="cta-meta-item">Horários de atendimento · a confirmar</div>
