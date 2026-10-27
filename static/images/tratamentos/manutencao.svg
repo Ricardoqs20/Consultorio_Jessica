@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f4efe8"/>
+      <stop offset="100%" style="stop-color:#ede6dc"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)" rx="12"/>
+  <path d="M415 163 a1 1 0 0 0 0 1.4l8 8a1 1 0 0 0 1.4 0l19-19a30 30 0 0 1-40 40l-35 35a10 10 0 0 1-15-15l35-35a30 30 0 0 1 40-40l-19 19z" 
+        transform="translate(345,120) scale(0.9)" fill="none" stroke="#672d3b" stroke-width="2.5" opacity="0.5"/>
+  <text x="400" y="310" text-anchor="middle" font-family="Georgia, serif" font-size="26" fill="#672d3b" opacity="0.7">Manutenção</text>
+  <text x="400" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#8c857f">Foto do procedimento</text>
+</svg>

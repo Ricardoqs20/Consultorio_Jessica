@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f4efe8"/>
+      <stop offset="100%" style="stop-color:#ede6dc"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)" rx="12"/>
+  <circle cx="400" cy="190" r="60" fill="none" stroke="#672d3b" stroke-width="2.5" opacity="0.5"/>
+  <circle cx="385" cy="178" r="4" fill="#672d3b" opacity="0.5"/>
+  <circle cx="415" cy="178" r="4" fill="#672d3b" opacity="0.5"/>
+  <path d="M385 200 Q400 215 415 200" fill="none" stroke="#672d3b" stroke-width="2" opacity="0.5"/>
+  <path d="M340 190 Q340 140 370 130" fill="none" stroke="#672d3b" stroke-width="1.5" opacity="0.3"/>
+  <path d="M460 190 Q460 140 430 130" fill="none" stroke="#672d3b" stroke-width="1.5" opacity="0.3"/>
+  <text x="400" y="310" text-anchor="middle" font-family="Georgia, serif" font-size="26" fill="#672d3b" opacity="0.7">Harmonização Facial</text>
+  <text x="400" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#8c857f">Foto do procedimento</text>
+</svg>

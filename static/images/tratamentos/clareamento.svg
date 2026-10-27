@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f4efe8"/>
+      <stop offset="100%" style="stop-color:#ede6dc"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)" rx="12"/>
+  <polygon points="400,140 410,170 443,173 418,193 425,225 400,208 375,225 382,193 357,173 390,170" fill="none" stroke="#672d3b" stroke-width="2.5" opacity="0.5"/>
+  <text x="400" y="310" text-anchor="middle" font-family="Georgia, serif" font-size="26" fill="#672d3b" opacity="0.7">Clareamento</text>
+  <text x="400" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#8c857f">Foto do procedimento</text>
+</svg>
