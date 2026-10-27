@@ -205,7 +205,7 @@ a {
 
 .treatment-photo-wrapper {
   flex: 0 0 50%;
-  min-height: 220px;
+  min-height: 280px;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -425,8 +425,8 @@ a {
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  gap: 1.5rem;
-  min-height: 230px;
+  gap: 0.8rem;
+  min-height: 320px;
   transition: var(--transition);
 }
 
