@@ -198,10 +198,16 @@ a {
 
 .treatment-photo {
   width: 100%;
-  height: 220px;
+  height: 100%;
   object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 0.8rem;
+  border-radius: 10px;
+}
+
+.treatment-photo-wrapper {
+  flex: 0 0 50%;
+  min-height: 220px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 .btn-primary {
   background-color: var(--color-burgundy);
@@ -407,7 +413,7 @@ a {
 
 .treatments-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
 
@@ -415,12 +421,20 @@ a {
   background: var(--color-bg-card);
   border: 1px solid var(--color-border-card);
   border-radius: 12px;
-  padding: 2.2rem 2rem;
+  padding: 1.5rem;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 1.5rem;
   min-height: 230px;
   transition: var(--transition);
+}
+
+.treatment-content {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .treatment-card:hover {
@@ -1076,8 +1090,21 @@ a {
   }
 
   .treatments-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 1rem;
+  }
+
+  .treatment-card {
+    flex-direction: column;
+  }
+
+  .treatment-content,
+  .treatment-photo-wrapper {
+    flex: 1 1 auto;
+  }
+
+  .treatment-photo-wrapper {
+    min-height: 180px;
   }
 
   .steps-grid {
@@ -1179,8 +1206,9 @@ a {
   }
 
   .treatment-card {
-    padding: 1.5rem 1.3rem;
-    min-height: 180px;
+    padding: 1.2rem;
+    min-height: auto;
+    flex-direction: column;
   }
 
   .treatment-title {
@@ -1369,8 +1397,9 @@ a {
   }
 
   .treatment-card {
-    padding: 1.4rem 1.2rem;
-    min-height: 160px;
+    padding: 1.2rem;
+    min-height: auto;
+    flex-direction: column;
   }
 
   .treatment-title {
