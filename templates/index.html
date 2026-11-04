@@ -12,7 +12,7 @@
   <!-- PWA & Mobile Web App Meta Tags -->
   <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#672d3b">
-  
+
   <!-- Apple Touch Icon & iOS PWA settings -->
   <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/apple-touch-icon.png') }}">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -81,13 +81,13 @@
             <a href="https://wa.me/5598985834148" target="_blank" class="btn-primary">
               Falar no WhatsApp
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
               </svg>
             </a>
             <p class="hero-subtext">Vamos conversar sobre o que você precisa.</p>
           </div>
         </div>
-        
+
         <!-- Coluna de Imagem (Desktop) -->
         <div class="hero-image-wrapper">
           <img src="{{ url_for('static', filename='images/hero-dra-jessica.png') }}" alt="Dra. Jéssica no consultório" class="hero-img">
@@ -105,7 +105,7 @@
               <a href="https://wa.me/5598985834148" target="_blank" class="btn-primary">
                 Falar no WhatsApp
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
                 </svg>
               </a>
               <p class="hero-subtext">Vamos conversar sobre o que você precisa.</p>
@@ -154,6 +154,7 @@
         <div class="treatments-grid">
           <!-- 1: Harmonização Facial -->
           <div class="treatment-card">
+            <div class="treatment-card">
             <div class="treatment-content">
               <h3 class="treatment-title">Harmonização Facial</h3>
               <p class="treatment-desc">Um olhar cuidadoso para a harmonia facial, respeitando seus traços e sua naturalidade.</p>
@@ -165,167 +166,83 @@
           </div>
 
           <!-- 2: Implante -->
-           <div class="treatment-card">
-             <div class="treatment-content">
-               <h3 class="treatment-title">Implante</h3>
-               <p class="treatment-desc">Alternativas seguras e modernas para reabilitar dentes perdidos e renovar sua segurança ao sorrir.</p>
-               <a href="https://wa.me/5598985834148?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20implantes%20dentários." target="_blank" class="treatment-link">Conversar sobre Implantes ↗</a>
-             </div>
-             <div class="before-after-container">
-               <div class="image-wrapper">
-                 <span class="badge">ANTES</span>
-                 <img src="{{ url_for('static', filename='images/tratamentos/implante-antes.jpg') }}" alt="Implante - Antes" class="treatment-photo" loading="lazy">
-               </div>
-               <div class="image-wrapper">
-                 <span class="badge">DEPOIS</span>
-                 <img src="{{ url_for('static', filename='images/tratamentos/implante-depois.jpg') }}" alt="Implante - Depois" class="treatment-photo" loading="lazy">
-               </div>
-             </div>
-           </div>
-          <div class="treatment-card">
-            <div class="treatment-content">
-              <h3 class="treatment-title">Implante</h3>
-              <p class="treatment-desc">Alternativas seguras e modernas para reabilitar dentes perdidos e renovar sua segurança ao sorrir.</p>
-              <a href="https://wa.me/5598985834148?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20implantes%20dentários." target="_blank" class="treatment-link">Conversar sobre Implantes ↗</a>
+          <div class="treatment-content">
+            <h3 class="treatment-title">Implante</h3>
+            <p class="treatment-desc">Alternativas seguras e modernas para reabilitar dentes perdidos e renovar sua segurança ao sorrir.</p>
+            <a href="https://wa.me/5598985834148?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20implantes%20dentários." target="_blank" class="treatment-link">Conversar sobre Implantes ↗</a>
+          </div>
+          <div class="before-after-container">
+            <div class="image-wrapper">
+              <span class="badge">ANTES</span>
+              <img src="{{ url_for('static', filename='images/tratamentos/implante-antes.jpg') }}" alt="Implante - Antes" class="treatment-photo" loading="lazy">
             </div>
-            <div class="treatment-photo-wrapper">
-              <div class="treatment-before-after-grid">
-                <div class="photo-col">
-                  <span class="photo-label">Antes</span>
-                  <img src="{{ url_for('static', filename='images/tratamentos/implante-antes.jpg') }}" alt="Implante - Antes" class="treatment-photo" loading="lazy">
-                </div>
-                <div class="photo-col">
-                  <span class="photo-label">Depois</span>
-                  <img src="{{ url_for('static', filename='images/tratamentos/implante-depois.jpg') }}" alt="Implante - Depois" class="treatment-photo" loading="lazy">
-                </div>
-              </div>
+            <div class="image-wrapper">
+              <span class="badge">DEPOIS</span>
+              <img src="{{ url_for('static', filename='images/tratamentos/implante-depois.jpg') }}" alt="Implante - Depois" class="treatment-photo" loading="lazy">
             </div>
           </div>
+        </div>
 
-          <!-- 3: Prótese sob Implante -->
-           <div class="treatment-card">
-             <div class="treatment-content">
-               <h3 class="treatment-title">Prótese sob Implante</h3>
-               <p class="treatment-desc">Restauração funcional e estética sob medida para devolver o conforto da mastigação e harmonia.</p>
-               <a href="https://wa.me/5598965834148?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20próteses%20dentárias." target="_blank" class="treatment-link">Conversar sobre Prótese ↗</a>
-             </div>
-             <div class="before-after-container">
-               <div class="image-wrapper">
-                 <span class="badge">ANTES</span>
-                 <img src="{{ url_for('static', filename='images/tratamentos/protese-antes.jpg') }}" alt="Prótese sob Implante - Antes" class="treatment-photo" loading="lazy">
-               </div>
-               <div class="image-wrapper">
-                 <span class="badge">DEPOIS</span>
-                 <img src="{{ url_for('static', filename='images/tratamentos/protese-depois.jpg') }}" alt="Prótese sob Implante - Depois" class="treatment-photo" loading="lazy">
-               </div>
-             </div>
-           </div>
-          <div class="treatment-card">
-            <div class="treatment-content">
-              <h3 class="treatment-title">Prótese sob Implante</h3>
-              <p class="treatment-desc">Restauração funcional e estética sob medida para devolver o conforto da mastigação e harmonia.</p>
-              <a href="https://wa.me/5598985834148?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20próteses%20dentárias." target="_blank" class="treatment-link">Conversar sobre Prótese ↗</a>
-            </div>
-            <div class="treatment-photo-wrapper">
-              <div class="treatment-before-after-grid">
-                <div class="photo-col">
-                  <span class="photo-label">Antes</span>
-                  <img src="{{ url_for('static', filename='images/tratamentos/protese-antes.jpg') }}" alt="Prótese sob Implante - Antes" class="treatment-photo" loading="lazy">
-                </div>
-                <div class="photo-col">
-                  <span class="photo-label">Depois</span>
-                  <img src="{{ url_for('static', filename='images/tratamentos/protese-depois.jpg') }}" alt="Prótese sob Implante - Depois" class="treatment-photo" loading="lazy">
-                </div>
-              </div>
-            </div>
+        <!-- 3: Prótese sob Implante -->
+        <div class="treatment-content">
+          <h3 class="treatment-title">Prótese sob Implante</h3>
+          <p class="treatment-desc">Restauração funcional e estética sob medida para devolver o conforto da mastigação e harmonia.</p>
+          <a href="https://wa.me/5598965834148?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20próteses%20dentárias." target="_blank" class="treatment-link">Conversar sobre Prótese ↗</a>
+        </div>
+        <div class="before-after-container">
+          <div class="image-wrapper">
+            <span class="badge">ANTES</span>
+            <img src="{{ url_for('static', filename='images/tratamentos/protese-antes.jpg') }}" alt="Prótese sob Implante - Antes" class="treatment-photo" loading="lazy">
           </div>
-
-          <!-- 4: Limpeza -->
-          <div class="treatment-card">
-            <div class="treatment-content">
-              <h3 class="treatment-title">Limpeza</h3>
-              <p class="treatment-desc">Profilaxia completa e remoção de placa para dentes e gengivas saudáveis e protegidos.</p>
-              <a href="https://wa.me/5598985834148?text=Olá!%20Gostaria%20de%20agendar%20uma%20limpeza%20dental." target="_blank" class="treatment-link">Conversar sobre Limpeza ↗</a>
-            </div>
-            <div class="treatment-photo-wrapper single-photo">
-              <img src="{{ url_for('static', filename='images/tratamentos/limpeza.svg') }}" alt="Foto de Limpeza" class="treatment-photo">
-            </div>
+          <div class="image-wrapper">
+            <span class="badge">DEPOIS</span>
+            <img src="{{ url_for('static', filename='images/tratamentos/protese-depois.jpg') }}" alt="Prótese sob Implante - Depois" class="treatment-photo" loading="lazy">
           </div>
+        </div>
 
-          <!-- 5: Facetas e Estética -->
-           <div class="treatment-card">
-             <div class="treatment-content">
-               <h3 class="treatment-title">Facetas e Estética</h3>
-               <p class="treatment-desc">Transformação harmônica do sorriso com facetas e lentes sob medida, unindo naturalidade e estética.</p>
-               <a href="https://wa.me/5598985834148?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20facetas%20dentárias." target="_blank" class="treatment-link">Conversar sobre Facetas ↗</a>
-             </div>
-             <div class="before-after-container">
-               <div class="image-wrapper">
-                 <span class="badge">ANTES</span>
-                 <img src="{{ url_for('static', filename='images/tratamentos/facetas-antes.jpg') }}" alt="Facetas e Estética - Antes" class="treatment-photo" loading="lazy">
-               </div>
-               <div class="image-wrapper">
-                 <span class="badge">DEPOIS</span>
-                 <img src="{{ url_for('static', filename='images/tratamentos/facetas-depois.jpg') }}" alt="Facetas e Estética - Depois" class="treatment-photo" loading="lazy">
-               </div>
-             </div>
-           </div>
-          <div class="treatment-card">
-            <div class="treatment-content">
-              <h3 class="treatment-title">Facetas e Estética</h3>
-              <p class="treatment-desc">Transformação harmônica do sorriso com facetas e lentes sob medida, unindo naturalidade e estética.</p>
-              <a href="https://wa.me/5598985834148?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20facetas%20dentárias." target="_blank" class="treatment-link">Conversar sobre Facetas ↗</a>
-            </div>
-            <div class="treatment-photo-wrapper">
-              <div class="treatment-before-after-grid">
-                <div class="photo-col">
-                  <span class="photo-label">Antes</span>
-                  <img src="{{ url_for('static', filename='images/tratamentos/facetas-antes.jpg') }}" alt="Facetas e Estética - Antes" class="treatment-photo" loading="lazy">
-                </div>
-                <div class="photo-col">
-                  <span class="photo-label">Depois</span>
-                  <img src="{{ url_for('static', filename='images/tratamentos/facetas-depois.jpg') }}" alt="Facetas e Estética - Depois" class="treatment-photo" loading="lazy">
-                </div>
-              </div>
-            </div>
+        <!-- 4: Limpeza -->
+        <div class="treatment-card">
+          <div class="treatment-content">
+            <h3 class="treatment-title">Limpeza</h3>
+            <p class="treatment-desc">Profilaxia completa e remoção de placa para dentes e gengivas saudáveis e protegidos.</p>
+            <a href="https://wa.me/5598985834148?text=Olá!%20Gostaria%20de%20agendar%20uma%20limpeza%20dental." target="_blank" class="treatment-link">Conversar sobre Limpeza ↗</a>
           </div>
+          <div class="treatment-photo-wrapper single-photo">
+            <img src="{{ url_for('static', filename='images/tratamentos/limpeza.svg') }}" alt="Foto de Limpeza" class="treatment-photo">
+          </div>
+        </div>
 
-          <!-- 6: Aparelho Ortodôntico -->
-           <div class="treatment-card">
-             <div class="treatment-content">
-               <h3 class="treatment-title">Aparelho Ortodôntico</h3>
-               <p class="treatment-desc">Alinhamento e equilíbrio do sorriso. Entenda as possibilidades e aparelhos para o caso.</p>
-               <a href="https://wa.me/5598985834148?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20aparelho%20ortodôntico." target="_blank" class="treatment-link">Conversar sobre Ortodontia ↗</a>
-             </div>
-             <div class="before-after-container">
-               <div class="image-wrapper">
-                 <span class="badge">ANTES</span>
-                 <img src="{{ url_for('static', filename='images/tratamentos/aparelho-ortodontico-antes.jpg') }}" alt="Aparelho Ortodôntico - Antes" class="treatment-photo" loading="lazy">
-               </div>
-               <div class="image-wrapper">
-                 <span class="badge">DEPOIS</span>
-                 <img src="{{ url_for('static', filename='images/tratamentos/aparelho-ortodontico-depois.jpg') }}" alt="Aparelho Ortodôntico - Depois" class="treatment-photo" loading="lazy">
-               </div>
-             </div>
-           </div>
-          <div class="treatment-card">
-            <div class="treatment-content">
-              <h3 class="treatment-title">Aparelho Ortodôntico</h3>
-              <p class="treatment-desc">Alinhamento e equilíbrio do sorriso. Entenda as possibilidades e aparelhos para o seu caso.</p>
-              <a href="https://wa.me/5598985834148?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20aparelho%20ortodôntico." target="_blank" class="treatment-link">Conversar sobre Ortodontia ↗</a>
-            </div>
-            <div class="treatment-photo-wrapper">
-              <div class="treatment-before-after-grid">
-                <div class="photo-col">
-                  <span class="photo-label">Antes</span>
-                  <img src="{{ url_for('static', filename='images/tratamentos/aparelho-ortodontico-antes.jpg') }}" alt="Aparelho Ortodôntico - Antes" class="treatment-photo" loading="lazy">
-                </div>
-                <div class="photo-col">
-                  <span class="photo-label">Depois</span>
-                  <img src="{{ url_for('static', filename='images/tratamentos/aparelho-ortodontico-depois.jpg') }}" alt="Aparelho Ortodôntico - Depois" class="treatment-photo" loading="lazy">
-                </div>
-              </div>
-            </div>
+        <!-- 5: Facetas e Estética -->
+        <div class="treatment-content">
+          <h3 class="treatment-title">Facetas e Estética</h3>
+          <p class="treatment-desc">Transformação harmônica do sorriso com facetas e lentes sob medida, unindo naturalidade e estética.</p>
+          <a href="https://wa.me/5598985834148?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20facetas%20dentárias." target="_blank" class="treatment-link">Conversar sobre Facetas ↗</a>
+        </div>
+        <div class="before-after-container">
+          <div class="image-wrapper">
+            <span class="badge">ANTES</span>
+            <img src="{{ url_for('static', filename='images/tratamentos/facetas-antes.jpg') }}" alt="Facetas e Estética - Antes" class="treatment-photo" loading="lazy">
+          </div>
+          <div class="image-wrapper">
+            <span class="badge">DEPOIS</span>
+            <img src="{{ url_for('static', filename='images/tratamentos/facetas-depois.jpg') }}" alt="Facetas e Estética - Depois" class="treatment-photo" loading="lazy">
+          </div>
+        </div>
+
+        <!-- 6: Aparelho Ortodôntico -->
+        <div class="treatment-content">
+          <h3 class="treatment-title">Aparelho Ortodôntico</h3>
+          <p class="treatment-desc">Alinhamento e equilíbrio do sorriso. Entenda as possibilidades e aparelhos para o caso.</p>
+          <a href="https://wa.me/5598985834148?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20aparelho%20ortodôntico." target="_blank" class="treatment-link">Conversar sobre Ortodontia ↗</a>
+        </div>
+        <div class="before-after-container">
+          <div class="image-wrapper">
+            <span class="badge">ANTES</span>
+            <img src="{{ url_for('static', filename='images/tratamentos/aparelho-ortodontico-antes.jpg') }}" alt="Aparelho Ortodôntico - Antes" class="treatment-photo" loading="lazy">
+          </div>
+          <div class="image-wrapper">
+            <span class="badge">DEPOIS</span>
+            <img src="{{ url_for('static', filename='images/tratamentos/aparelho-ortodontico-depois.jpg') }}" alt="Aparelho Ortodôntico - Depois" class="treatment-photo" loading="lazy">
           </div>
         </div>
 
