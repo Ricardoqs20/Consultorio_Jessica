@@ -198,6 +198,19 @@ a {
 
 .treatment-photo {
   width: 100%;
+  height: auto;
+  max-height: 180px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+}
+
+@media (max-width: 767px) {
+  .treatment-photo {
+    max-height: 140px;
+  }
+}
+  width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
@@ -235,6 +248,19 @@ a {
 
 .photo-col .treatment-photo {
   width: 100%;
+  height: auto;
+  max-height: 180px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+}
+
+@media (max-width: 767px) {
+  .treatment-photo {
+    max-height: 140px;
+  }
+}
+  width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
@@ -258,6 +284,19 @@ a {
 }
 
 .treatment-photo-wrapper.single-photo .treatment-photo {
+  width: 100%;
+  height: auto;
+  max-height: 180px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+}
+
+@media (max-width: 767px) {
+  .treatment-photo {
+    max-height: 140px;
+  }
+}
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1394,6 +1433,19 @@ a {
   }
 
   .photo-col .treatment-photo {
+  width: 100%;
+  height: auto;
+  max-height: 180px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+}
+
+@media (max-width: 767px) {
+  .treatment-photo {
+    max-height: 140px;
+  }
+}
     width: 100% !important;
     height: 100% !important;
     aspect-ratio: 1 / 1 !important;
@@ -1410,6 +1462,19 @@ a {
   }
 
   .treatment-photo-wrapper.single-photo .treatment-photo {
+  width: 100%;
+  height: auto;
+  max-height: 180px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+}
+
+@media (max-width: 767px) {
+  .treatment-photo {
+    max-height: 140px;
+  }
+}
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
