@@ -212,8 +212,8 @@ a {
 }
 
 .treatment-before-after-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 8px;
   width: 100%;
   height: 100%;
@@ -1105,8 +1105,13 @@ a {
     padding: 44px 0 !important;
   }
 
-  .desktop-only {
+  .desktop-only,
+  .desktop-only-block {
     display: none !important;
+  }
+
+  .mobile-only-block {
+    display: block !important;
   }
 
   .mobile-nav-toggle {
@@ -1253,29 +1258,59 @@ a {
     text-align: left;
   }
 
-  .hero-mobile-img-box {
-    width: 100% !important;
-    display: block !important;
-  }
-
+  .hero-mobile-img-box,
   .hero-mobile-img {
-    width: 100% !important;
-    height: auto !important;
-    max-height: 380px !important;
-    min-height: unset !important;
-    object-fit: cover !important;
-    object-position: top center !important;
-    border-radius: 16px !important;
-    box-shadow: 0 8px 24px rgba(78, 62, 54, 0.1) !important;
+    display: none !important;
   }
 
   /* ==========================================================================
      4. Seção Quem Somos & Dra. Jéssica
      ========================================================================== */
-  .about-grid,
   .profile-grid {
     grid-template-columns: 1fr !important;
     gap: 1.8rem !important;
+  }
+
+  .about-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+    margin-top: 2.5rem !important;
+  }
+
+  /* Ordem mobile solicitada: Texto -> Foto do Consultório -> Botão/CTA */
+  .about-grid .about-content {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .about-grid .about-text-body {
+    order: 1 !important;
+  }
+
+  .about-grid .about-image-wrapper {
+    order: 2 !important;
+    margin: 1.2rem 0 !important;
+    width: 100%;
+  }
+
+  .about-grid .about-cta-wrapper {
+    order: 3 !important;
+    width: 100%;
+  }
+
+  .about-grid .about-cta-wrapper .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+    padding: 0.85rem 1.6rem !important;
+    font-size: 0.95rem !important;
+    font-weight: 600;
+    border-radius: 8px;
+    box-shadow: 0 4px 14px rgba(103, 45, 59, 0.25);
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .about-img,
