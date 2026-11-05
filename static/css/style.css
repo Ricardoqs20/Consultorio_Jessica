@@ -268,8 +268,12 @@ a {
 }
 
 .hero-mobile-row {
-  display: none;
-}
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 1.2rem !important; /* Reduz um pouco o espaçamento para a foto encaixar perfeitamente */
+    width: 100% !important;
+  }
 
 .hero-cta-group {
   margin-bottom: 1rem;
