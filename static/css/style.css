@@ -1273,13 +1273,12 @@ a {
 
 .hero-mobile-img {
     width: 100% !important;
-    height: auto !important;
-    max-height: 250px !important; /* Reduz a altura máxima para aproximar do tamanho do Canva */
-    min-height: unset !important;
-    object-fit: cover !important;
-    object-position: center center !important; /* Centraliza melhor o corte da foto */
-    border-radius: 12px !important; /* Cantos arredondados mais suaves como no rascunho */
-    box-shadow: 0 6px 18px rgba(78, 62, 54, 0.08) !important;
+    height: auto !important; /* Deixa a altura fluida para não achatar nem cortar */
+    max-height: none !important;
+    object-fit: contain !important; /* Garante que a foto inteira apareça sem cortes */
+    border-radius: 16px !important; /* Arredondamento suave igual ao do Canva */
+    box-shadow: 0 4px 20px rgba(78, 62, 54, 0.08) !important;
+    display: block !important;
   }
 
   /* 4. Seção Quem Somos & Dra. Jéssica */
