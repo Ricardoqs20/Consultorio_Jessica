@@ -1277,9 +1277,9 @@ a {
 .hero-mobile-img {
     width: 92% !important;
     max-width: 350px !important;
-    height: 270px !important; /* Altura ligeiramente mais compacta para aproximar do quadrado do Canva */
+    height: 330px !important; /* Aumenta a altura vertical para revelar mais da parte de baixo */
     object-fit: cover !important;
-    object-position: center 25% !important; /* Move o foco do corte um pouco para baixo, mostrando mais o corpo e menos o teto */
+    object-position: center 15% !important; /* Ajusta o enquadramento para equilibrar o topo e a base */
     border-radius: 16px !important;
     box-shadow: 0 4px 16px rgba(78, 62, 54, 0.08) !important;
     display: block !important;
