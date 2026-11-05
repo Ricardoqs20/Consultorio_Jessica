@@ -1268,20 +1268,18 @@ a {
 
 .hero-mobile-img-box {
     width: 100% !important;
-    display: flex !important;
-    justify-content: center !important;
-    margin: 0.5rem 0 !important;
+    display: block !important;
+    margin: 0.2rem 0 !important;
   }
 
 .hero-mobile-img {
-    width: 82% !important; /* Reduz a largura para não ocupar 100% da tela, igual ao Canva */
-    max-width: 320px !important; /* Trava uma largura máxima charmosa */
-    height: 260px !important; /* Define uma altura fixa proporcional */
-    object-fit: cover !important; /* Mantém o preenchimento sem distorcer */
-    object-position: top center !important; /* Foca no rosto/corpo da Dra. Jéssica */
-    border-radius: 16px !important; /* Cantos arredondados iguais */
-    box-shadow: 0 6px 20px rgba(78, 62, 54, 0.08) !important;
-    margin: 0 auto !important; /* Centraliza a imagem horizontalmente */
+    width: 100% !important; /* Ocupa a largura total do container alinhada com o texto */
+    max-width: 100% !important;
+    height: 220px !important; /* Altura menor e mais compacta, exatamente como no Canva */
+    object-fit: cover !important;
+    object-position: top center !important;
+    border-radius: 14px !important; /* Cantos arredondados suaves */
+    box-shadow: 0 4px 16px rgba(78, 62, 54, 0.08) !important;
     display: block !important;
   }
 
