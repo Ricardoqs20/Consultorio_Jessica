@@ -1288,10 +1288,12 @@ a {
     gap: 1.8rem !important;
   }
 
+  .about-content,
   .profile-content {
     order: 1;
   }
   
+  .about-image-wrapper,
   .profile-image-wrapper {
     order: 2;
   }
