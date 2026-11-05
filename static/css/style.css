@@ -1266,18 +1266,22 @@ a {
     text-align: left;
   }
 
-  .hero-mobile-img-box {
+.hero-mobile-img-box {
     width: 100% !important;
-    display: block !important;
+    display: flex !important;
+    justify-content: center !important;
+    margin: 0.5rem 0 !important;
   }
 
 .hero-mobile-img {
-    width: 100% !important;
-    height: auto !important; /* Deixa a altura fluida para não achatar nem cortar */
-    max-height: none !important;
-    object-fit: contain !important; /* Garante que a foto inteira apareça sem cortes */
-    border-radius: 16px !important; /* Arredondamento suave igual ao do Canva */
-    box-shadow: 0 4px 20px rgba(78, 62, 54, 0.08) !important;
+    width: 82% !important; /* Reduz a largura para não ocupar 100% da tela, igual ao Canva */
+    max-width: 320px !important; /* Trava uma largura máxima charmosa */
+    height: 260px !important; /* Define uma altura fixa proporcional */
+    object-fit: cover !important; /* Mantém o preenchimento sem distorcer */
+    object-position: top center !important; /* Foca no rosto/corpo da Dra. Jéssica */
+    border-radius: 16px !important; /* Cantos arredondados iguais */
+    box-shadow: 0 6px 20px rgba(78, 62, 54, 0.08) !important;
+    margin: 0 auto !important; /* Centraliza a imagem horizontalmente */
     display: block !important;
   }
 
