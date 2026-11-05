@@ -1288,6 +1288,14 @@ a {
     gap: 1.8rem !important;
   }
 
+  .profile-content {
+    order: 1;
+  }
+  
+  .profile-image-wrapper {
+    order: 2;
+  }
+
   .about-img,
   .profile-img {
     width: 100%;
