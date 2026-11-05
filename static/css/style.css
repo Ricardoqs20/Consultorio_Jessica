@@ -1268,17 +1268,20 @@ a {
 
 .hero-mobile-img-box {
     width: 100% !important;
-    display: block !important;
-    margin: 0.2rem 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    padding: 0 15px !important; /* Cria o espaçamento lateral idêntico ao Canva */
+    box-sizing: border-box;
+    margin: 0.5rem 0 !important;
   }
 
 .hero-mobile-img {
-    width: 100% !important; /* Ocupa a largura total do container alinhada com o texto */
-    max-width: 100% !important;
-    height: 220px !important; /* Altura menor e mais compacta, exatamente como no Canva */
+    width: 100% !important;
+    max-width: 340px !important; /* Trava a largura perfeita para telemóveis */
+    height: 320px !important; /* Altura controlada para manter a proporção do rascunho */
     object-fit: cover !important;
-    object-position: top center !important;
-    border-radius: 14px !important; /* Cantos arredondados suaves */
+    object-position: center top !important;
+    border-radius: 18px !important; /* Cantos bem arredondados como no design */
     box-shadow: 0 4px 16px rgba(78, 62, 54, 0.08) !important;
     display: block !important;
   }
