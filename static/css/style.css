@@ -1653,3 +1653,29 @@ a {
     font-size: 0.78rem;
   }
 }
+
+/* Estrutura simplificada da seção da foto */
+.secao-dra-jessica {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Configuração da imagem responsiva */
+.foto-dra-jessica {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.foto-dra-jessica img {
+    width: 100%;
+    max-width: 800px; /* Mantém um tamanho excelente no PC */
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
