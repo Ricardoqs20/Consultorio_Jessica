@@ -1219,7 +1219,7 @@ a {
     display: flex !important;
     flex-direction: column !important;
     align-items: stretch !important;
-    gap: 1.75rem !important;
+    gap: 0.6rem !important; /* Reduz drasticamente a distância entre os blocos (título, foto e texto) */
     width: 100% !important;
   }
 
@@ -1269,21 +1269,21 @@ a {
 .hero-mobile-img-box {
     width: 100% !important;
     display: flex !important;
-    justify-content: center !important;
-    padding: 0 15px !important; /* Cria o espaçamento lateral idêntico ao Canva */
-    box-sizing: border-box;
-    margin: 0.5rem 0 !important;
+    justify-content: flex-start !important; /* Desloca a imagem para a esquerda */
+    padding: 0 !important; /* Remove margens excessivas */
+    margin: 0.2rem 0 !important;
   }
 
 .hero-mobile-img {
-    width: 100% !important;
-    max-width: 340px !important; /* Trava a largura perfeita para telemóveis */
-    height: 320px !important; /* Altura controlada para manter a proporção do rascunho */
+    width: 92% !important; /* Ocupa uma largura ótima, ligeiramente deslocada à esquerda */
+    max-width: 350px !important;
+    height: 300px !important; /* Altura compacta e proporcional ao modelo */
     object-fit: cover !important;
     object-position: center top !important;
-    border-radius: 18px !important; /* Cantos bem arredondados como no design */
+    border-radius: 16px !important;
     box-shadow: 0 4px 16px rgba(78, 62, 54, 0.08) !important;
     display: block !important;
+    margin-left: 0 !important; /* Garante que encoste na esquerda do container */
   }
 
   /* 4. Seção Quem Somos & Dra. Jéssica */
