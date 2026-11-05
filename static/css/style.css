@@ -1119,7 +1119,7 @@ a {
   }
 
   .section {
-    padding: 44px 0 !important;
+    padding: 28px 0 !important;
   }
 
   .desktop-only {
@@ -1207,7 +1207,7 @@ a {
 
   /* 3. Seção Hero */
   .hero-section {
-    padding: 2.2rem 0 2rem !important;
+    padding: 1.5rem 0 1rem !important;
   }
 
   .hero-content,
@@ -1425,13 +1425,13 @@ a {
     font-size: 0.76rem;
     color: var(--color-text-muted);
     text-align: center;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     line-height: 1.5;
   }
 
   /* 6. Seção de Avaliações Google */
   .reviews-section {
-    padding: 44px 0 !important;
+    padding: 28px 0 !important;
     overflow: hidden;
   }
 
@@ -1502,7 +1502,7 @@ a {
   /* 7. Seção FAQ */
   .faq-grid {
     grid-template-columns: 1fr !important;
-    gap: 1.8rem !important;
+    gap: 1.2rem !important; /* Reduz o espaço entre o título do FAQ e as perguntas */
   }
 
   .faq-desc {
@@ -1512,7 +1512,7 @@ a {
 
   .faq-list {
     width: 100%;
-    gap: 0.75rem;
+    gap: 0.6rem !important; /* Aproxima um pouco mais as caixas de perguntas */
     display: flex;
     flex-direction: column;
   }
