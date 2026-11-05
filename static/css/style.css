@@ -289,14 +289,11 @@ a {
 
 .hero-img {
   width: 100%;
-  max-width: 470px;
-  height: 520px;
+  height: 480px;
   object-fit: cover;
-  border-top-left-radius: 140px;
-  border-top-right-radius: 12px;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  box-shadow: 0 16px 40px rgba(78, 62, 54, 0.08);
+  border-radius: 12px;
+  border-bottom-right-radius: 120px;
+  box-shadow: 0 12px 36px rgba(78, 62, 54, 0.08);
 }
 
 .image-caption {
