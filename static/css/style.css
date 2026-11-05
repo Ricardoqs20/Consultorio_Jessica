@@ -195,250 +195,6 @@ a {
 }
 
 /* Buttons */
-
-.treatment-photo {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  object-position: center !important;
-  display: block !important;
-}
-
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  object-position: center;
-  /* keep border radius if needed, wrapper handles it */
-}
-
-  width: 100%;
-  height: auto;
-  max-height: 180px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 8px;
-}
-
-@media (max-width: 767px) {
-  .treatment-photo {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  object-position: center !important;
-  display: block !important;
-}
-
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  object-position: center;
-  /* keep border radius if needed, wrapper handles it */
-}
-
-    max-height: 140px;
-  }
-}
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.treatment-photo-wrapper {
-  width: 100% !important;
-  aspect-ratio: 16/9 !important;
-  height: auto !important;
-  position: relative !important;
-  overflow: hidden !important;
-  border-radius: 8px !important;
-  margin-bottom: 8px !important;
-}
-
-  border-radius: 12px;
-  overflow: hidden;
-  position: relative;
-  /* Remove fixed height/min-height */
-  flex: 0 0 60%;
-  width: 100%;
-}
-
-  flex: 0 0 60%;
-  min-height: 280px;
-  border-radius: 10px;
-  overflow: hidden;
-  display: flex;
-}
-
-.treatment-before-after-grid {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  gap: 8px;
-}
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px;
-  width: 100%;
-  height: 100%;
-}
-
-.photo-col {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-  overflow: hidden;
-  background-color: var(--color-bg-subtle);
-}
-
-.photo-col .treatment-photo {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  object-position: center !important;
-  display: block !important;
-}
-
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  object-position: center;
-  /* keep border radius if needed, wrapper handles it */
-}
-
-  width: 100%;
-  height: auto;
-  max-height: 180px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 8px;
-}
-
-@media (max-width: 767px) {
-  .treatment-photo {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  object-position: center !important;
-  display: block !important;
-}
-
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  object-position: center;
-  /* keep border radius if needed, wrapper handles it */
-}
-
-    max-height: 140px;
-  }
-}
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.photo-label {
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  background: rgba(43, 38, 35, 0.7);
-  color: #ffffff;
-  font-size: 0.68rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  padding: 2px 7px;
-  border-radius: 4px;
-  backdrop-filter: blur(4px);
-  z-index: 2;
-  pointer-events: none;
-}
-
-.treatment-photo-wrapper.single-photo .treatment-photo {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  object-position: center !important;
-  display: block !important;
-}
-
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  object-position: center;
-  /* keep border radius if needed, wrapper handles it */
-}
-
-  width: 100%;
-  height: auto;
-  max-height: 180px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 8px;
-}
-
-@media (max-width: 767px) {
-  .treatment-photo {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  object-position: center !important;
-  display: block !important;
-}
-
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  object-position: center;
-  /* keep border radius if needed, wrapper handles it */
-}
-
-    max-height: 140px;
-  }
-}
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 8px;
-}
 .btn-primary {
   background-color: var(--color-burgundy);
   color: #ffffff;
@@ -626,7 +382,9 @@ a {
   gap: 0.55rem;
 }
 
-/* Section Tratamentos */
+/* ==========================================================================
+   Section Tratamentos
+   ========================================================================== */
 .treatments-header {
   display: flex;
   justify-content: space-between;
@@ -648,29 +406,28 @@ a {
 }
 
 .treatment-card {
-  background: var(--color-bg-card);
+  background: #ffffff;
   border: 1px solid var(--color-border-card);
   border-radius: 12px;
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  gap: 0.8rem;
-  min-height: 320px;
-  transition: var(--transition);
-}
-
-.treatment-content {
-  flex: 0 0 40%;
+  padding: 20px;
+  margin-bottom: 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  gap: 0.8rem;
+  transition: var(--transition);
 }
 
 .treatment-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.04);
   border-color: #d8cebf;
+}
+
+.treatment-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .treatment-icon {
@@ -692,8 +449,7 @@ a {
   font-size: 0.92rem;
   color: var(--color-text-body);
   line-height: 1.55;
-  margin-bottom: 1.8rem;
-  flex-grow: 1;
+  margin-bottom: 1rem;
 }
 
 .treatment-link {
@@ -703,6 +459,81 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
+}
+
+/* Treatment photos – single photo wrapper (SVG illustrations) */
+.treatment-photo-wrapper {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.treatment-photo-wrapper.single-photo {
+  height: 200px;
+}
+
+.treatment-photo-wrapper .treatment-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Before/After container (new structure) */
+.before-after-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.image-wrapper .badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: bold;
+  z-index: 5;
+}
+
+/* Photo labels (legacy) */
+.photo-label {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: rgba(43, 38, 35, 0.7);
+  color: #ffffff;
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 2px 7px;
+  border-radius: 4px;
+  backdrop-filter: blur(4px);
+  z-index: 2;
+  pointer-events: none;
 }
 
 .treatments-disclaimer {
@@ -1202,6 +1033,9 @@ a {
   color: var(--color-text-muted);
 }
 
+/* ==========================================================================
+   TABLET Responsive (max-width: 992px)
+   ========================================================================== */
 @media (max-width: 992px) {
   .hero-grid,
   .about-grid,
@@ -1272,10 +1106,11 @@ a {
   }
 }
 
+/* ==========================================================================
+   MOBILE Responsive (max-width: 768px)
+   ========================================================================== */
 @media (max-width: 768px) {
-  /* ==========================================================================
-     1. Espaçamento, Containers e Reset Global Mobile
-     ========================================================================== */
+  /* 1. Espaçamento, Containers e Reset Global Mobile */
   .container {
     padding: 0 20px !important;
     max-width: 100%;
@@ -1332,9 +1167,7 @@ a {
     margin-top: 1.5rem;
   }
 
-  /* ==========================================================================
-     2. Tipografia e Hierarquia Visual Mobile
-     ========================================================================== */
+  /* 2. Tipografia e Hierarquia Visual Mobile */
   h1, .section-title, .hero-section .section-title {
     font-size: 28px !important;
     line-height: 1.25 !important;
@@ -1371,9 +1204,7 @@ a {
     text-align: left;
   }
 
-  /* ==========================================================================
-     3. Seção Hero (Texto acima, CTA destacado, Imagem abaixo)
-     ========================================================================== */
+  /* 3. Seção Hero */
   .hero-section {
     padding: 2.2rem 0 2rem !important;
   }
@@ -1450,9 +1281,7 @@ a {
     box-shadow: 0 8px 24px rgba(78, 62, 54, 0.1) !important;
   }
 
-  /* ==========================================================================
-     4. Seção Quem Somos & Dra. Jéssica
-     ========================================================================== */
+  /* 4. Seção Quem Somos & Dra. Jéssica */
   .about-grid,
   .profile-grid {
     grid-template-columns: 1fr !important;
@@ -1481,9 +1310,7 @@ a {
     margin: 1.25rem 0;
   }
 
-  /* ==========================================================================
-     5. Cards de Serviços e Tratamentos (Antes e Depois em Grid 2 Colunas)
-     ========================================================================== */
+  /* 5. Cards de Serviços e Tratamentos */
   .treatments-header {
     flex-direction: column;
     align-items: flex-start;
@@ -1497,17 +1324,12 @@ a {
   }
 
   .treatment-card {
-    background: #ffffff !important;
-    border: 1px solid var(--color-border-card) !important;
-    border-radius: 12px !important;
-    padding: 20px !important;
-    box-shadow: 0 4px 16px rgba(78, 62, 54, 0.05) !important;
     display: flex !important;
     flex-direction: column !important;
     align-items: stretch !important;
     gap: 1.1rem !important;
     min-height: auto !important;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    padding: 20px !important;
   }
 
   .treatment-content {
@@ -1540,112 +1362,11 @@ a {
     margin-top: 0.2rem;
   }
 
+  /* Treatment photo wrapper mobile */
   .treatment-photo-wrapper {
-  width: 100% !important;
-  aspect-ratio: 16/9 !important;
-  height: auto !important;
-  position: relative !important;
-  overflow: hidden !important;
-  border-radius: 8px !important;
-  margin-bottom: 8px !important;
-}
-
-  border-radius: 12px;
-  overflow: hidden;
-  position: relative;
-  /* Remove fixed height/min-height */
-  flex: 0 0 60%;
-  width: 100%;
-}
-
-    flex: 1 1 auto !important;
     width: 100% !important;
-    min-height: unset !important;
     border-radius: 10px;
     overflow: hidden;
-  }
-
-  .treatment-before-after-grid {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  gap: 8px;
-}
-    display: grid !important;
-    grid-template-columns: 1fr 1fr !important;
-    gap: 8px !important;
-    width: 100% !important;
-  }
-
-  .photo-col {
-    position: relative;
-    width: 100%;
-    border-radius: 8px;
-    overflow: hidden;
-    background-color: var(--color-bg-subtle);
-    aspect-ratio: 1 / 1 !important;
-  }
-
-  .photo-col .treatment-photo {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  object-position: center !important;
-  display: block !important;
-}
-
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  object-position: center;
-  /* keep border radius if needed, wrapper handles it */
-}
-
-  width: 100%;
-  height: auto;
-  max-height: 180px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 8px;
-}
-
-@media (max-width: 767px) {
-  .treatment-photo {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  object-position: center !important;
-  display: block !important;
-}
-
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  object-position: center;
-  /* keep border radius if needed, wrapper handles it */
-}
-
-    max-height: 140px;
-  }
-}
-    width: 100% !important;
-    height: 100% !important;
-    aspect-ratio: 1 / 1 !important;
-    object-fit: cover !important;
-    border-radius: 8px;
-    display: block;
   }
 
   .treatment-photo-wrapper.single-photo {
@@ -1655,64 +1376,17 @@ a {
     overflow: hidden;
   }
 
-  .treatment-photo-wrapper.single-photo .treatment-photo {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  object-position: center !important;
-  display: block !important;
-}
-
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  object-position: center;
-  /* keep border radius if needed, wrapper handles it */
-}
-
-  width: 100%;
-  height: auto;
-  max-height: 180px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 8px;
-}
-
-@media (max-width: 767px) {
-  .treatment-photo {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  object-position: center !important;
-  display: block !important;
-}
-
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  object-position: center;
-  /* keep border radius if needed, wrapper handles it */
-}
-
-    max-height: 140px;
-  }
-}
+  .treatment-photo-wrapper .treatment-photo {
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
     border-radius: 8px;
+    display: block;
+  }
+
+  /* Before/After mobile */
+  .image-wrapper img {
+    height: 140px;
   }
 
   .photo-label {
@@ -1740,9 +1414,7 @@ a {
     line-height: 1.5;
   }
 
-  /* ==========================================================================
-     6. Seção de Avaliações Google
-     ========================================================================== */
+  /* 6. Seção de Avaliações Google */
   .reviews-section {
     padding: 44px 0 !important;
     overflow: hidden;
@@ -1784,7 +1456,7 @@ a {
   }
 
   .carousel-arrow {
-    display: none !important; /* Em mobile, swipe horizontal natural é mais fluido */
+    display: none !important;
   }
 
   .reviews-track-container {
@@ -1812,9 +1484,7 @@ a {
     line-height: 1.5;
   }
 
-  /* ==========================================================================
-     7. Seção FAQ (Acordeão Moderno e Bem Espaçado)
-     ========================================================================== */
+  /* 7. Seção FAQ */
   .faq-grid {
     grid-template-columns: 1fr !important;
     gap: 1.8rem !important;
@@ -1889,9 +1559,7 @@ a {
     padding-top: 0.85rem;
   }
 
-  /* ==========================================================================
-     8. Banner CTA e Rodapé Mobile
-     ========================================================================== */
+  /* 8. Banner CTA e Rodapé Mobile */
   .cta-banner {
     padding: 44px 0 !important;
   }
@@ -1974,42 +1642,4 @@ a {
     padding-top: 1.2rem;
     font-size: 0.78rem;
   }
-}
-
-/* New layout for before/after images */
-.before-after-container {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 100%;
-  margin-top: 15px;
-}
-
-.image-wrapper {
-  position: relative;
-  width: 100%;
-  height: 150px;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.image-wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-}
-
-.badge {
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  background: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  padding: 3px 8px;
-  border-radius: 4px;
-  font-size: 11px;
-  font-weight: bold;
-  z-index: 2;
 }
