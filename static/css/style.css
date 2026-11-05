@@ -1275,15 +1275,15 @@ a {
   }
 
 .hero-mobile-img {
-    width: 92% !important; /* Ocupa uma largura ótima, ligeiramente deslocada à esquerda */
+    width: 92% !important;
     max-width: 350px !important;
-    height: 300px !important; /* Altura compacta e proporcional ao modelo */
+    height: 270px !important; /* Altura ligeiramente mais compacta para aproximar do quadrado do Canva */
     object-fit: cover !important;
-    object-position: center top !important;
+    object-position: center 25% !important; /* Move o foco do corte um pouco para baixo, mostrando mais o corpo e menos o teto */
     border-radius: 16px !important;
     box-shadow: 0 4px 16px rgba(78, 62, 54, 0.08) !important;
     display: block !important;
-    margin-left: 0 !important; /* Garante que encoste na esquerda do container */
+    margin-left: 0 !important;
   }
 
   /* 4. Seção Quem Somos & Dra. Jéssica */
