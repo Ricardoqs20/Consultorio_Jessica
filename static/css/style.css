@@ -1275,11 +1275,11 @@ a {
   }
 
 .hero-mobile-img {
-    width: 86% !important; /* Deixa a largura ligeiramente mais enxuta, igual ao Canva */
+    width: 86% !important; /* Mantém exatamente a mesma largura horizontal */
     max-width: 310px !important;
-    height: 250px !important; /* Altura menor, no formato compacto idêntico ao rascunho */
+    height: 275px !important; /* Aumenta ligeiramente apenas na vertical para baixo */
     object-fit: cover !important;
-    object-position: center 20% !important; /* Mantém o enquadramento perfeito do rosto e do corpo */
+    object-position: center 22% !important; /* Ajusta o enquadramento perfeito para revelar mais a parte inferior */
     border-radius: 16px !important;
     box-shadow: 0 4px 16px rgba(78, 62, 54, 0.08) !important;
     display: block !important;
